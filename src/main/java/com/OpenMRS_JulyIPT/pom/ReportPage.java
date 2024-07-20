@@ -11,6 +11,11 @@ public class ReportPage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+
 	@FindBy(xpath = "//textarea[@placeholder='Enter a caption']")
 	private WebElement caption;
+
+	@FindBy(xpath = "(//a[@class='button task activelist'])[5]")
+	private WebElement attachments;
+
 }
